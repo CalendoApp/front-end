@@ -1,0 +1,134 @@
+<div class="remodal" data-remodal-id="add-tag">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="row">
+      <div class="form-group">
+        <input type="text" class="form-control" id="addTodo" placeholder="Название тега">
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="row">
+      <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
+  </div>
+</div>
+
+<div class="remodal auth" data-remodal-id="auth">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <h3 class="text-center">Вход</h3>
+    <form>
+      <div class="form-group">
+        <label for="auth-mail">Эл. почта</label>
+        <input type="email" class="form-control" id="auth-mail" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="auth-pass">Пароль</label>
+        <input type="password" class="form-control" id="auth-pass" placeholder="Пароль">
+      </div>
+      <div class="form-group">
+
+      </div>
+      <button type="submit" class="btn btn-block btn-primary btn-lg">Войти</button>
+    </form>
+  </div>
+</div>
+
+<div class="remodal auth" data-remodal-id="login">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <h3 class="text-center">Регистрация</h3>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Эл. почта</label>
+        <input type="email" class="form-control" id="reg-mail" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Пароль</label>
+        <input type="password" class="form-control" id="reg-pass" placeholder="Пароль">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Повтор пароля</label>
+        <input type="password" class="form-control" id="reg-pass-repeat" placeholder="Пароль">
+      </div>
+      <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="col-xs-12 col-md-3">
+
+  <div class="left-bar">
+
+    <div class="left-bar__logo row">
+      <a href="#!"><i class="calendo-ic"></i></a>
+    </div>
+
+    <div class="left-bar__profile row">
+
+      <!--  Вошли в аккаунт  -->
+      <!-- <div class="profile">
+        <img src="http://placehold.it/45" class="img-circle">
+        <h4>Manu Khakulov</h4>
+      </div> -->
+
+      <!-- Не вошли в аккаунт -->
+      <div class="profile profile--login">
+        <img src="http://placehold.it/45" class="img-circle">
+        <h4>Аноним</h4>
+      </div>
+    </div>
+
+    <div class="left-bar__action row">
+      <ul class="nav nav-pills nav-stacked">
+        <!-- Вошли в аккаунт -->
+        <!-- <li><a href="#"><i class="settings-ic"></i>Настройки</a></li> -->
+        <!-- <li><a href="#"><i class="logout-ic"></i>Выйти</a></li> -->
+
+        <!-- Не вошли в аккаунт -->
+        <!-- <li><a href="#"><i class="settings-ic"></i></a></li> -->
+        <li><a href="#auth"><i class="login-ic"></i>Войти</a></li>
+        <li><a href="#login"><i class="login-ic"></i>Регистрация</a></li>
+
+        <hr>
+        <li class="active">
+          <a href="#"><i class="calendar-ic"></i>
+            Неделя <span class="badge">42</span></a></li>
+        <li>
+          <a href="#"><i class="calendar-ic"></i>
+            Месяц <span class="badge">139</span></a></li>
+        <li>
+          <a href="#"><i class="calendar-ic"></i>
+            Год</a></li>
+        <li>
+          <a href="#"><i class="flame-ic"></i>
+            Важные <span class="badge">5</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="flame-ic"></i>
+            Без даты <span class="badge">5</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="check-ic check-ic--menu"></i>
+            Выполненные <span class="badge">5</span></a>
+        </li>
+        <hr>
+        <li>
+          <div class="tag tag--red">Срочно</div>
+          <div class="tag tag--blue">Работа</div>
+          <div class="tag tag--red">Ебала</div>
+          <div class="tag tag--blue">Всякое</div>
+          <div class="tag tag--red">Быро</div>
+          <div class="tag tag--blue">Хуета</div>
+          <div class="tag tag--add" data-remodal-target="add-tag">Добавить тег</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="left-bar__footer row">
+      <p>© 2017 <a href="https://github.com/CalendoApp">CalendoApp</a></p>
+    </div>
+
+  </div>
+
+</div>

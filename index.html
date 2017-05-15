@@ -1,11 +1,214 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<!--[if IE 8 ]><html class="no-js ie8" lang="ru"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <title>Calendo</title>
     <meta charset="utf-8">
-    <title>calendo-frontend</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Calendo">
+    <meta name="image" content="build/img/cover.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Calendo">
+    <meta itemprop="description" content="Calendo">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Calendo" />
+
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="build/css/remodal.css">
+    <link rel="stylesheet" href="build/css/remodal-default-theme.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="container">
+    <div class="row">
+      <div class="remodal" data-remodal-id="add-tag">
+        <div class="col-xs-6 col-xs-offset-3">
+          <div class="row">
+            <div class="form-group">
+              <input type="text" class="form-control" id="addTodo" placeholder="Название тега">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+            <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="remodal auth" data-remodal-id="auth">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <h3 class="text-center">Вход</h3>
+          <form>
+            <div class="form-group">
+              <label for="auth-mail">Эл. почта</label>
+              <input type="email" class="form-control" id="auth-mail" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="auth-pass">Пароль</label>
+              <input type="password" class="form-control" id="auth-pass" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+      
+            </div>
+            <button type="submit" class="btn btn-block btn-primary btn-lg">Войти</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="remodal auth" data-remodal-id="login">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <h3 class="text-center">Регистрация</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Эл. почта</label>
+              <input type="email" class="form-control" id="reg-mail" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Пароль</label>
+              <input type="password" class="form-control" id="reg-pass" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Повтор пароля</label>
+              <input type="password" class="form-control" id="reg-pass-repeat" placeholder="Пароль">
+            </div>
+            <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+      
+      
+      <div class="col-xs-12 col-md-3">
+      
+        <div class="left-bar">
+      
+          <div class="left-bar__logo row">
+            <a href="#!"><i class="calendo-ic"></i></a>
+          </div>
+      
+          <div class="left-bar__profile row">
+      
+            <!--  Вошли в аккаунт  -->
+            <!-- <div class="profile">
+              <img src="http://placehold.it/45" class="img-circle">
+              <h4>Manu Khakulov</h4>
+            </div> -->
+      
+            <!-- Не вошли в аккаунт -->
+            <div class="profile profile--login">
+              <img src="http://placehold.it/45" class="img-circle">
+              <h4>Аноним</h4>
+            </div>
+          </div>
+      
+          <div class="left-bar__action row">
+            <ul class="nav nav-pills nav-stacked">
+              <!-- Вошли в аккаунт -->
+              <!-- <li><a href="#"><i class="settings-ic"></i>Настройки</a></li> -->
+              <!-- <li><a href="#"><i class="logout-ic"></i>Выйти</a></li> -->
+      
+              <!-- Не вошли в аккаунт -->
+              <!-- <li><a href="#"><i class="settings-ic"></i></a></li> -->
+              <li><a href="#auth"><i class="login-ic"></i>Войти</a></li>
+              <li><a href="#login"><i class="login-ic"></i>Регистрация</a></li>
+      
+              <hr>
+              <li class="active">
+                <a href="#"><i class="calendar-ic"></i>
+                  Неделя <span class="badge">42</span></a></li>
+              <li>
+                <a href="#"><i class="calendar-ic"></i>
+                  Месяц <span class="badge">139</span></a></li>
+              <li>
+                <a href="#"><i class="calendar-ic"></i>
+                  Год</a></li>
+              <li>
+                <a href="#"><i class="flame-ic"></i>
+                  Важные <span class="badge">5</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="flame-ic"></i>
+                  Без даты <span class="badge">5</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="check-ic check-ic--menu"></i>
+                  Выполненные <span class="badge">5</span></a>
+              </li>
+              <hr>
+              <li>
+                <div class="tag tag--red">Срочно</div>
+                <div class="tag tag--blue">Работа</div>
+                <div class="tag tag--red">Ебала</div>
+                <div class="tag tag--blue">Всякое</div>
+                <div class="tag tag--red">Быро</div>
+                <div class="tag tag--blue">Хуета</div>
+                <div class="tag tag--add" data-remodal-target="add-tag">Добавить тег</div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="left-bar__footer row">
+            <p>© 2017 <a href="https://github.com/CalendoApp">CalendoApp</a></p>
+          </div>
+      
+        </div>
+      
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="row">
+          <div class="form-group">
+            <input type="text" class="form-control" id="addTodo" placeholder="Какие планы?">
+          </div>
+        </div>
+        <div class="row">
+          <div class="day-name"><h2>Все задачи за неделю</h2></div>
+      
+          <div class="task-item">
+            <div class="task-item__check">
+              <checkIcon class="check-ic" />
+            </div>
+            <div class="task-item__text">Lorem ipsum dolor sit amet.</div>
+            <div class="task-item__tags">
+              <div class="tag tag--red">Срочно</div>
+              <div class="tag tag--blue">Работа</div>
+            </div>
+          </div>
+      
+          <div class="task-item task-item--completed">
+            <div class="task-item__check">
+              <!-- <checkIcon class="check-ic" /> -->
+              <i class="check-ic"></i>
+            </div>
+            <div class="task-item__text">Lorem ipsum dolor sit amet.</div>
+            <div class="task-item__tags"></div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="build/js/scripts.js"></script>
+<script src="build/js/main.js"></script>
+</body>
 </html>

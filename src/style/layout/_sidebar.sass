@@ -1,0 +1,49 @@
+.left-bar
+  &__profile
+    padding: 0 20px 15px 35px
+    margin-bottom: 15px
+
+    img, h4
+      display: inline-block
+      vertical-align: top
+    h4
+      padding-top: 4px
+      padding-left: 10px
+
+
+  &__logo
+    width: 90%
+    border-radius: 6px
+    padding: 0px 20px 20px 20px
+    margin-left: 2px
+    position: relative
+    margin-bottom: 20px
+    text-align: center
+
+    &:after
+      +position(absolute, null 0 0 0)
+      +size(75% 1px)
+      content: ''
+      margin-left: auto
+      margin-right: auto
+      background: rgba(#000, .07)
+
+  &__action
+    width: 90%
+    border-radius: 6px
+    padding: 15px 20px
+    margin-left: 2px
+    background: #fff
+    box-shadow: 0 0 8px 0 rgba(#000, .05)
+
+  &__footer
+    width: 90%
+    padding: 15px 5px
+    margin-left: 2px
+    text-align: center
+    p
+      font-size: 0.9em
+      color: #ababab
+
+  .badge
+    float: right

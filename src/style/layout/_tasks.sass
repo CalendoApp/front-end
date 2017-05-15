@@ -1,0 +1,101 @@
+.day-name
+  margin-bottom: 15px
+
+.task-item
+  +size(100% auto)
+  padding: 0 15px
+  background: #fff
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05)
+  border-radius: 6px
+  min-height: 50px
+  line-height: 45px
+  margin-bottom: 8px
+
+  &--completed
+    .task-item__text
+      color: rgba(#000, .3)
+      text-decoration: line-through
+    .task-item__check
+      &:after
+        opacity: 0
+      .check-ic
+        opacity: 1
+
+
+  &__text
+    display: inline-block
+    line-height: 1
+    vertical-align: top
+    padding: 15px 0 0 16px
+    font-size: 16px
+
+  &__check
+    +size(22px 32px)
+    vertical-align: middle
+    background-size: cover
+    display: inline-block
+    position: relative
+
+    &:after
+      content: ''
+      +size(20px)
+      +position(absolute, 7px 0 0 0)
+      border: 2px solid #C7C7C7
+      border-radius: 100%
+
+    .check-ic
+      opacity: 0
+
+  &__tags
+    display: inline-block
+    line-height: 1
+    padding-left: 40px
+    float: right
+    margin-top: 12px
+    +size(auto)
+
+.form-control
+  font-size: 24px
+  font-weight: 300
+  height: auto
+  border-radius: 6px
+  line-height: 1.4em
+
+.tag
+  display: inline-block
+  border-radius: 4px
+  font-size: 13px
+  border-radius: 4px
+  padding: 0 4px 0 12px
+  line-height: 25px
+  cursor: pointer
+  vertical-align: top
+  position: relative
+  margin-bottom: 4px
+
+  &:hover
+    opacity: .7
+
+  &:after
+    content: '#'
+    position: absolute
+    left: 4px
+    top: 0
+
+  &--red
+    background: #FFEBEB
+    color: darken(#FFEBEB, 25%)
+
+  &--blue
+    background: #E7ECFF
+    color: darken(#E7ECFF, 25%)
+
+  &--add
+    display: block
+    background: #eee
+    text-align: center
+    color: #909090
+    margin-top: 5px
+    padding: 4px 4px 4px 12px
+    &:after
+      display: none
