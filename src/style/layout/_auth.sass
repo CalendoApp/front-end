@@ -11,3 +11,28 @@
     height: 34px
     border-radius: 4px
     line-height: 1
+
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover
+    border: 0px solid #ddd
+    background: #337AB7
+    color: #fff
+    border-radius: 0
+
+  .nav-tabs
+    background: rgba(#000, .05)
+    border-radius: 4px
+    overflow: hidden
+    margin: 15px 0
+    border: 0px solid #000
+    li
+      +size(50% auto)
+      display: inline-block
+
+      a
+        border: 0px solid #fff
+        text-align: center
+
+  .tab-content
+    padding-top: 15px

@@ -56,46 +56,54 @@
       </div>
       
       <div class="remodal auth" data-remodal-id="auth">
-        <div class="col-xs-12 col-md-6 col-md-offset-3">
-          <h3 class="text-center">Вход</h3>
-          <form>
-            <div class="form-group">
-              <label for="auth-mail">Эл. почта</label>
-              <input type="email" class="form-control" id="auth-mail" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="auth-pass">Пароль</label>
-              <input type="password" class="form-control" id="auth-pass" placeholder="Пароль">
-            </div>
-            <div class="form-group">
+        <!-- <div class="col-xs-12 col-md-6"> -->
+        <!-- <div class="col-xs-12 col-md-6"> -->
       
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#login" aria-controls="home" role="tab" data-toggle="tab">Вход</a>
+            </li>
+            <li role="presentation">
+              <a href="#reg" aria-controls="profile" role="tab" data-toggle="tab">Регистрация</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="login">
+              <form>
+                <div class="form-group">
+                  <label for="auth-mail">Эл. почта</label>
+                  <input type="email" class="form-control" id="auth-mail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="auth-pass">Пароль</label>
+                  <input type="password" class="form-control" id="auth-pass" placeholder="Пароль">
+                </div>
+                <div class="form-group">
+      
+                </div>
+                <button type="submit" class="btn btn-block btn-primary btn-lg">Войти</button>
+              </form>
             </div>
-            <button type="submit" class="btn btn-block btn-primary btn-lg">Войти</button>
-          </form>
+            <div role="tabpanel" class="tab-pane" id="reg">
+              <form>
+                <div class="form-group">
+                  <label for="auth-mail">Эл. почта</label>
+                  <input type="email" class="form-control" id="auth-mail2" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="auth-pass">Пароль</label>
+                  <input type="password" class="form-control" id="auth-pass2" placeholder="Пароль">
+                </div>
+                <div class="form-group">
+      
+                </div>
+                <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <div class="remodal auth" data-remodal-id="login">
-        <div class="col-xs-12 col-md-6 col-md-offset-3">
-          <h3 class="text-center">Регистрация</h3>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Эл. почта</label>
-              <input type="email" class="form-control" id="reg-mail" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Пароль</label>
-              <input type="password" class="form-control" id="reg-pass" placeholder="Пароль">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Повтор пароля</label>
-              <input type="password" class="form-control" id="reg-pass-repeat" placeholder="Пароль">
-            </div>
-            <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
-          </form>
-        </div>
-      </div>
-      
       
       <div class="col-xs-12 col-md-3">
       
@@ -128,8 +136,7 @@
       
               <!-- Не вошли в аккаунт -->
               <!-- <li><a href="#"><i class="settings-ic"></i></a></li> -->
-              <li><a href="#auth"><i class="login-ic"></i>Войти</a></li>
-              <li><a href="#login"><i class="login-ic"></i>Регистрация</a></li>
+              <li><a href="#auth"><i class="login-ic"></i>Авторизация</a></li>
       
               <hr>
               <li class="active">
@@ -173,6 +180,62 @@
         </div>
       
       </div>
+      <div class="remodal" data-remodal-id="task-modal">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="row">
+            <h2>Lorem ipsum dolor sit.</h2>
+          </div>
+          <div class="row">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Left</a>
+              </div>
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Middle</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Left</a>
+              </div>
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Middle</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Left</a>
+              </div>
+              <div class="btn-group" role="group">
+                <a type="button" class="btn btn-default">Middle</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+      
       <div class="col-xs-12 col-md-6">
         <div class="row">
           <div class="form-group">
@@ -182,7 +245,7 @@
         <div class="row">
           <div class="day-name"><h2>Все задачи за неделю</h2></div>
       
-          <div class="task-item">
+          <div data-remodal-target="task-modal" class="task-item">
             <div class="task-item__check">
               <checkIcon class="check-ic" />
             </div>

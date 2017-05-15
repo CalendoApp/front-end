@@ -7,3 +7,5 @@
 //= partials/remodal.min.js
 
 //= partials/likely.js
+
+//= partials/bootstrap.js

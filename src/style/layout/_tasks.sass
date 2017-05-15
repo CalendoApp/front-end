@@ -10,6 +10,11 @@
   min-height: 50px
   line-height: 45px
   margin-bottom: 8px
+  transition: all .1s ease-in-out
+  border: 1px solid transparent
+
+  &:hover
+    border: 1px solid rgba(#000, .15)
 
   &--completed
     .task-item__text
@@ -60,6 +65,7 @@
   height: auto
   border-radius: 6px
   line-height: 1.4em
+  
 
 .tag
   display: inline-block
