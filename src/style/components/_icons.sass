@@ -5,31 +5,34 @@
   background-size: contain !important
 
 .calendar-ic
-  +size(18px)
-  background: url(../img/calendar-ic.svg) no-repeat
+  +size(18px 19px)
   display: inline-block
-  background-size: contain
+  background-size: cover
   margin-right: 10px
-  transform: translateY(-2px)
+  transform: translateY(0px)
   vertical-align: bottom
   display: inline-block
-  &--day
-    fill: #52a5f7
+  &--week
+    background-image: url(../img/calendarWeek-ic.svg)
   &--month
-    fill: #897eab
+    background-image: url(../img/calendarMonth-ic.svg)
   &--year
-      fill: #e67272
+    background-image: url(../img/calendarYear-ic.svg)
+  &--without
+    background-image: url(../img/calendarNodate-ic.svg)
 
 .flame-ic
   +size(18px)
-  background: url(../img/flame-ic.svg) no-repeat
+  background: url(../img/hot-ic.svg)
   display: inline-block
-  background-size: contain
+  background-size: 11px 18px
+  background-repeat: no-repeat
+  background-position: center center
+
   margin-right: 10px
   transform: translateY(-2px)
   vertical-align: bottom
   display: inline-block
-  fill: #ec7f14
 
 .settings-ic,
 .logout-ic,

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="217px" height="56px" viewBox="0 0 217 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="239px" height="60px" viewBox="0 0 239 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>Calendo</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="400" font-family="BrushScriptStd, Brush Script Std" font-style="italic" font-size="67">
-        <g id="Add-note" transform="translate(-50.000000, -354.000000)" fill="#023AFF">
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="76" font-family="NautilusPompilius, Nautilus Pompilius" font-weight="normal">
+        <g id="Start" transform="translate(-67.000000, -211.000000)" fill="#000000">
             <text id="Calendo">
-                <tspan x="51" y="401">Calendo</tspan>
+                <tspan x="66.324" y="270">Calendo</tspan>
             </text>
         </g>
     </g>
