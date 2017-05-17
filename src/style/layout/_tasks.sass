@@ -16,6 +16,8 @@
 
   &:hover
     border: 1px solid rgba(#000, .15)
+    .task-item__fav
+      opacity: 1
 
   &--completed
     .task-item__text
@@ -33,6 +35,21 @@
     text-align: left
     line-height: 50px
     color: rgba(#000, .75)
+
+  &__fav
+    +position(absolute, 0 -40px 0 null)
+    +size(40px 50px)
+    cursor: pointer
+    transition: opacity .2s ease-in-out
+    opacity: 0
+
+    &.active,
+    &:hover
+      opacity: 1
+      .star-ic
+        background-image: url(../img/star-ic--pressed.svg)
+        background-size: cover
+
 
   &__text
     display: inline-block
