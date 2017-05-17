@@ -182,7 +182,10 @@
       <div class="remodal task-modal" data-remodal-id="task-modal">
         <div class="col-xs-12 col-md-10 col-md-offset-1">
           <div class="row">
-            <h2>Покормить кошку. <small><br>Изменение записи</small></h2>
+            <div class="form-group">
+              <h2><small>Изменение записи</small></h2>
+              <input class="form-control input-lg" value="Покормить кошку" type="text" placeholder="Изменить текст задачи">
+            </div>
           </div>
       
           <div class="row">
@@ -209,6 +212,10 @@
                 <label for="task-repeat">Длительность</label>
                 <input id="task-repeat" type="number" class="form-control" placeholder="Text input">
               </div>
+              <div class="form-group">
+                <label for="task-tags">Добавить тег</label>
+                <input id="task-tags" type="text" class="form-control" placeholder="Перечислять через запятую">
+              </div>
       
               <div class="form-group">
                 <label for="task-notes">Заметка</label>
@@ -216,9 +223,12 @@
               </div>
       
               <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
+                <div class="offset-sm-2 col-sm-9">
                   <button type="submit" class="btn btn-default">Отмена</button>
                   <button type="submit" class="btn btn-primary">Сохранить</button>
+                </div>
+                <div class="col-sm-3 text-right">
+                  <button type="button" class="btn btn-danger">Удалить</button>
                 </div>
               </div>
             </form>
