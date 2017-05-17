@@ -6,38 +6,32 @@
 
     <div class="row">
       <form>
-        <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
-          <div class="col-sm-8">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Заданные параметры</h3>
+          </div>
+          <div class="panel-body">
+            <p>На день: <b>Понедельник, 15 мая</b></p>
+            <p>Длительность: <b>0:30</b></p>
+            <p>Напоминание: <b>05 мая 2015, 19:30</b></p>
           </div>
         </div>
-        <div class="form-group row">
-          <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
-          <div class="col-sm-8">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-          </div>
+        <div class="form-group">
+          <label for="task-time-finish">Задать дату выполнения</label>
+          <input id="task-time-finish" type="date" class="form-control" placeholder="Text input">
         </div>
-        <fieldset class="form-group row">
-          <div class="col-xs-12">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                Option one is this and that&mdash;be sure to include why it's great
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                Option two can be something else and selecting it will deselect option one
-              </label>
-            </div>
-          </div>
-        </fieldset>
+        <div class="form-group">
+          <label for="task-endTime">Время напоминания</label>
+          <input id="task-endTime" type="datetime-local" class="form-control" placeholder="Text input">
+        </div>
+        <div class="form-group">
+          <label for="task-repeat">Длительность</label>
+          <input id="task-repeat" type="number" class="form-control" placeholder="Text input">
+        </div>
 
         <div class="form-group">
-          <label for="exampleTextarea">Example textarea</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          <label for="task-notes">Заметка</label>
+          <textarea class="form-control" id="task-notes" rows="3"></textarea>
         </div>
 
         <div class="form-group row">
@@ -61,24 +55,25 @@
   <div class="row">
     <div class="day-name"><h2>Все задачи за неделю</h2></div>
 
-    <div data-remodal-target="task-modal" class="task-item">
+    <div class="task-item">
       <div class="task-item__check">
-        <checkIcon class="check-ic" />
+        <i class="check-ic"></i>
       </div>
-      <div class="task-item__text">Lorem ipsum dolor sit amet.</div>
+      <div data-remodal-target="task-modal" class="task-item__text">Lorem ipsum dolor sit amet.</div>
       <div class="task-item__tags">
         <div class="tag tag--red">Срочно</div>
         <div class="tag tag--blue">Работа</div>
       </div>
+      <div class="task-item__time">15 часов</div>
     </div>
 
     <div class="task-item task-item--completed">
       <div class="task-item__check">
-        <!-- <checkIcon class="check-ic" /> -->
         <i class="check-ic"></i>
       </div>
-      <div class="task-item__text">Lorem ipsum dolor sit amet.</div>
+      <div data-remodal-target="task-modal" class="task-item__text">Lorem ipsum dolor sit amet.</div>
       <div class="task-item__tags"></div>
+      <div class="task-item__time">15 часов</div>
     </div>
 
   </div>

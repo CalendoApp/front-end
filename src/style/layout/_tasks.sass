@@ -3,14 +3,14 @@
 
 .task-item
   +size(100% auto)
-  padding: 0 15px
+  padding: 0 15px 0 0
   background: #fff
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.05)
   border-radius: 6px
-  cursor: pointer
   min-height: 50px
   line-height: 45px
   margin-bottom: 8px
+  position: relative
   transition: all .1s ease-in-out
   border: 1px solid transparent
 
@@ -27,27 +27,40 @@
       .check-ic
         opacity: 1
 
+  &__time
+    +position(absolute, 0 0 0 null)
+    +size(70px 50px)
+    text-align: left
+    line-height: 50px
+    color: rgba(#000, .75)
 
   &__text
     display: inline-block
     line-height: 1
     vertical-align: top
-    padding: 15px 0 0 16px
+    padding: 15px 0 0 0
     font-size: 16px
+    min-height: 50px
+    cursor: pointer
+    width: calc(100% - 245px)
 
   &__check
-    +size(22px 32px)
+    +size(50px)
     vertical-align: middle
     background-size: cover
     display: inline-block
     position: relative
+    padding: 0 15px
+    cursor: pointer
 
     &:after
       content: ''
       +size(20px)
-      +position(absolute, 7px 0 0 0)
+      +position(absolute, 13px 0 0 0)
       border: 2px solid #C7C7C7
       border-radius: 100%
+      margin-left: auto
+      margin-right: auto
 
     .check-ic
       opacity: 0
@@ -55,10 +68,11 @@
   &__tags
     display: inline-block
     line-height: 1
-    padding-left: 40px
     float: right
     margin-top: 12px
     +size(auto)
+    margin-right: 65px
+    max-width: 170px
 
 .form-control
   font-size: 24px
@@ -114,7 +128,7 @@
     font-size: inherit
     font-weight: normal
     height: inherit
-    line-height: inherit
+    line-height: inherit !important
 
   h2
     margin-bottom: 35px
