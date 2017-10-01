@@ -70,7 +70,10 @@
         <input type="password" class="form-control" id="auth-pass2" placeholder="Пароль">
       </div>
       <div class="form-group">
-
+        <label>Загрузить аватар</label>
+        <label class="input-form__file">
+          <input type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))">
+        </label>
       </div>
       <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
     </form>
@@ -118,11 +121,6 @@
         <h4>Аноним</h4>
       </div> -->
 
-      <div class="profile profile--login">
-        <img src="build/img/avatar.png" class="img-circle">
-        <h4><a href="#auth">Регистрация</a></h4>
-      </div>
-
     </div>
 
     <div class="left-bar__action row">
@@ -133,7 +131,8 @@
 
         <!-- Не вошли в аккаунт -->
         <!-- <li><a href="#"><i class="settings-ic"></i></a></li> -->
-        <li><a href="#registration"><i class="login-ic"></i>Войти</a></li>
+        <li><a href="#auth"><i class="login-ic"></i>Войти</a></li>
+        <li><a href="#registration"><i class="logout-ic"></i>Регистрация</a></li>
 
         <hr>
         <li class="active">
