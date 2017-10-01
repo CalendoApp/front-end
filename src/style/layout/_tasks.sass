@@ -1,6 +1,17 @@
 .day-name
   margin-bottom: 15px
 
+  h2
+    font-size: 24px
+    margin-bottom: 0
+
+    ~ p
+      font-size: 1.75rem
+      font-weight: 200
+
+  &--week h2
+    font-size: 30px
+
 .task-item
   +size(100% auto)
   padding: 0 15px 0 0
@@ -30,8 +41,10 @@
         opacity: 1
 
   &__time
-    +position(absolute, 0 0 0 null)
-    +size(70px 50px)
+    // +position(absolute, 0 0 0 null)
+    float: right
+    margin-left: 10px
+    font-weight: 400
     text-align: left
     line-height: 50px
     color: rgba(#000, .75)
@@ -59,7 +72,8 @@
     font-size: 16px
     min-height: 50px
     cursor: pointer
-    width: calc(100% - 245px)
+    max-width: 310px
+    width: 100%
 
   &__check
     +size(50px)
@@ -94,8 +108,22 @@
   font-size: 24px
   font-weight: 300
   height: auto
-  border-radius: 6px
+  border-radius: 3px
   line-height: 1.4em
+
+.add-new
+  display: flex
+  width: 100%
+
+  input
+    flex-basis: 80%
+    margin-right: 5px
+
+  .btn
+    flex-basis: 20%
+    background: #247CAD
+    color: #fff
+    line-height: 32px
 
 
 .tag
@@ -127,6 +155,26 @@
     background: #E7ECFF
     color: darken(#E7ECFF, 25%)
 
+  &--yellow
+    background: #ffffae
+    color: darken(#ffffae, 55%)
+
+  &--pink
+    background: #ffd4fc
+    color: darken(#ffd4fc, 35%)
+
+  &--orange
+    background: #ffd383
+    color: darken(#ffd383, 35%)
+
+  &--green
+    background: #beffbe
+    color: darken(#beffbe, 55%)
+
+  &--violet
+    background: #bdac71
+    color: darken(#bdac71, 25%)
+
   &--add
     display: block
     background: #eee
@@ -136,6 +184,15 @@
     padding: 4px 4px 4px 12px
     &:after
       display: none
+
+.select-input
+  display: block
+  width: 100%
+  background: #fff
+  outline: none
+  padding: 10px
+  height: 30px
+  border: 1px solid rgba(#000, .15)
 
 .task-modal
   text-align: left
