@@ -1,0 +1,144 @@
+@import 'vendors/bootstrap/bootstrap'
+@import 'vendors/bourbon/bourbon'
+@import 'vendors/neat/neat'
+
+.auth-b
+  position: relative
+  +size(100% 100vh)
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: url(../img/bg.jpg)
+  background-size: 100%
+  background-repeat: no-repeat
+  background-position: center center
+  background-attachment: fixed
+
+  &:after
+    position: absolute
+    content: ''
+    +size(100%)
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: rgba(#000, .35)
+
+  &__wrapper
+    +size(100% auto)
+    max-width: 360px
+    background: #fff
+    border-radius: 4px
+    overflow: hidden
+    position: relative
+    z-index: 100
+    padding: 15px
+    text-align: center
+
+    h1
+      font-size: 24px
+
+.remodal
+  +size(100% auto)
+  max-width: 360px !important
+  background: #fff
+  border-radius: 4px
+  overflow: hidden
+  position: relative
+  z-index: 100
+  padding: 15px 15px 35px!important
+  text-align: center
+
+  h1
+    font-size: 24px
+
+.form-group
+  text-align: left
+
+  &.center
+    text-align: center
+
+.btn
+  +size(100% auto)
+  font-size: 1.55rem
+  background: #0A2EEA
+  color: #fff
+  padding: 0.95rem .5rem
+  cursor: pointer
+  font-weight: 400
+  margin-top: 10px
+
+  &--lost
+    border: 1px solid  #0A2EEA
+    background: transparent
+    color: #000
+    display: none
+
+    &.active
+      display: block
+
+  &--dashed
+    border-bottom: 1px dashed rgba(#0A2EEA, .35)
+    text-decoration: none !important
+
+  &:hover
+    color: #fff
+    background: darken(#0A2EEA, 10%)
+
+.input-form__file
+  width: 100%
+  min-width: 200px
+  height: 42px
+  line-height: 40px
+  margin-bottom: 15px
+  cursor: pointer
+  position: relative
+  display: inline-block
+  white-space: nowrap
+  text-align: right
+
+  &:before,
+  &:after
+    box-sizing: border-box
+    height: inherit
+    overflow: hidden
+    text-overflow: ellipsis
+    text-align: center
+    font-weight: normal
+    vertical-align: middle
+
+  &:before
+    z-index: 1
+    content: "Файл не выбран"
+    display: block
+    position: absolute
+    width: 100%
+    background-color: transparent
+    color: rgb(133, 133, 133)
+    border-width: 1px
+    border-style: solid
+    border-color: rgba(0, 0, 0, 0.2)
+    border-image: initial
+    padding: 0px 84px 0px 10px
+    border-radius: 4px
+
+  &:after
+    content: "Выбрать"
+    display: inline-block
+    position: relative
+    width: 74px
+    font-size: 14px
+    background-color: #247CAD
+    color: rgb(255, 255, 255)
+    padding: 0px 4px
+    border-radius: 0px 4px 4px 0px
+
+  input
+    position: absolute
+    width: 0
+    overflow: hidden
+    opacity: 0
+
+.input-form__file[title]:not([title=""]):before
+  content: attr(title)
+  color: #121212

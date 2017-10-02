@@ -153,13 +153,16 @@
 }
 
 .remodal-cancel {
-  color: #fff;
-  background: #e57373;
+  color: rgba(#000, .85);
+  background: transparent;
+  border: 1px solid rgba(#000, .15)
 }
 
 .remodal-cancel:hover,
 .remodal-cancel:focus {
   background: #ef5350;
+  color: #fff;
+  border: 1px solid rgba(#ef5350, .15)
 }
 
 /* Remove inner padding and border in Firefox 4+ for the button tag. */

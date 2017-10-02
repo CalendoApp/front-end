@@ -13,9 +13,13 @@
       +size(45px)
       border: 1px solid rgba(#000, .1)
     h4
-      padding-top: 10px
-      margin-top: 5px
+      padding-top: 5px
+      float: right
+      display: block
+      margin-top: 0
       padding-left: 10px
+      width: 100%
+      max-width: 135px
 
       a
         font-size: 1.5rem
@@ -29,14 +33,6 @@
     position: relative
     margin-bottom: 20px
     text-align: center
-
-    &:after
-      +position(absolute, null 0 0 0)
-      +size(75% 1px)
-      content: ''
-      margin-left: auto
-      margin-right: auto
-      background: rgba(#000, .07)
 
   &__action
     width: 90%

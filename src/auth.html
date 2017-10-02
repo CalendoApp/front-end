@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="no-js ie8" lang="ru"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+    <title>Calendo</title>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Calendo">
+    <meta name="image" content="build/img/cover.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Calendo">
+    <meta itemprop="description" content="Calendo">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Calendo" />
+
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="build/css/auth.css">
+    <link rel="stylesheet" href="build/css/remodal.css">
+    <link rel="stylesheet" href="build/css/remodal-default-theme.css">
+</head>
+<body>
+
+  <div class="remodal" data-remodal-id="registration">
+    <h1>Регистрация</h1>
+    <form class="col-xs-12 col-md-10 col-md-offset-1" style="margin-top: 25px">
+      <div class="form-group">
+        <label for="auth-mail">Эл. почта</label>
+        <input type="email" class="form-control" id="auth-mail2" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="auth-pass">Пароль</label>
+        <input type="password" class="form-control" id="auth-pass2" placeholder="Пароль">
+      </div>
+      <div class="form-group">
+        <label>Загрузить аватар</label>
+        <label class="input-form__file">
+          <input type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))">
+        </label>
+      </div>
+      <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <div class="auth-b">
+
+    <div class="auth-b__wrapper">
+      <h1>Авторизация</h1>
+
+      <form class="col-xs-12 col-md-10 col-md-offset-1" style="margin-top: 25px">
+        <div class="form-group">
+          <label for="auth-login">Логин</label>
+          <input id="auth-login" type="text" class="form-control" placeholder="Ваш логин">
+        </div>
+        <div class="form-group">
+          <label for="auth-pass">Пароль</label>
+          <input id="auth-pass" type="password" class="form-control" placeholder="Ваш пароль">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-primary btn-lg">Войти</button>
+          <a class="btn btn-block btn-primary btn-lg btn--lost">Забыли пароль?</a>
+        </div>
+        <div class="form-group center">
+          <a href="#registration" class="btn--dashed">Зарегистрироваться</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+//= template/footer.html

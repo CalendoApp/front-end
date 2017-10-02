@@ -171,7 +171,7 @@
     background: #beffbe
     color: darken(#beffbe, 55%)
 
-  &--violet
+  &--brown
     background: #bdac71
     color: darken(#bdac71, 25%)
 
@@ -191,8 +191,48 @@
   background: #fff
   outline: none
   padding: 10px
-  height: 30px
+  height: 33px
   border: 1px solid rgba(#000, .15)
+
+.input-form__label--radio
+  display: inline-block
+  position: relative
+  padding-left: 25px
+  cursor: pointer
+  font-weight: 700
+  margin-right: 20px
+
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+    &:checked ~ .indicator
+      border: 2px solid #15aeff
+
+      &:after
+        background: #515151
+
+  .indicator
+    position: absolute
+    top: 2px
+    left: 0
+    height: 16px
+    width: 16px
+    border-radius: 50%
+    border: 2px solid #a5a5a5
+    background: #fff
+
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      background: #fff
+      top: 2px
+      left: 2px
+      height: 8px
+      width: 8px
+      border-radius: 50%
 
 .task-modal
   text-align: left

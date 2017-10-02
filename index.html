@@ -39,32 +39,53 @@
 <div class="wrap">
   <div class="container">
     <div class="row">
-      <div class="remodal" data-remodal-id="add-tag">
-        <div class="col-xs-8 col-xs-offset-2">
-          <div class="row">
+      <div class="remodal task-modal" data-remodal-id="add-tag">
+        <div class="row">
+          <div class="col-xs-12">
             <div class="form-group">
-              <input type="text" class="form-control" id="addTodo" placeholder="Название тега">
+              <label for="tag-name">Название тега</label>
+              <input id="tag-name" type="text" class="form-control" placeholder="Работа">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label>Цвет тега</label> <br>
+      
+              <label class="input-form__label--radio" id="white"><span class="tag tag--red">Красный</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--blue">Синий</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--yellow">Желтый</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--pink">Розовый</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--orange">Оранжевый</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--green">Зеленый</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
+              <label class="input-form__label--radio" id="white"><span class="tag tag--brown">Коричневый</span>
+                <input type="radio" checked="" name="personType">
+                <div class="indicator"></div>
+              </label>
             </div>
           </div>
         </div>
-        <div class="col-xs-8 col-xs-offset-2">
-          <div class="row">
-            <div class="form-group">
-              <select class="select-input">
-                <option>123</option>
-                <option>123</option>
-                <option>123</option>
-                <option>123</option>
-                <option>123</option>
-                <option>123</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="row">
+        <div class="row">
+          <div class="col-xs-12">
+            <button data-remodal-action="confirm" class="remodal-confirm">Добавить</button>
             <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
-            <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
           </div>
         </div>
       </div>
@@ -98,29 +119,7 @@
         </div>
         <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
       </form> -->
-      
-      <div class="remodal auth" data-remodal-id="registration">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <form>
-            <div class="form-group">
-              <label for="auth-mail">Эл. почта</label>
-              <input type="email" class="form-control" id="auth-mail2" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="auth-pass">Пароль</label>
-              <input type="password" class="form-control" id="auth-pass2" placeholder="Пароль">
-            </div>
-            <div class="form-group">
-              <label>Загрузить аватар</label>
-              <label class="input-form__file">
-                <input type="file" onchange="this.parentNode.setAttribute('title', this.value.replace(/^.*[\\/]/, ''))">
-              </label>
-            </div>
-            <button type="submit" class="btn btn-block btn-primary btn-lg">Зарегистрироваться</button>
-          </form>
-        </div>
-      </div>
-      
+      <!--
       <div class="remodal auth" data-remodal-id="auth">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
           <form>
@@ -138,7 +137,7 @@
             <button type="submit" class="btn btn-block btn-primary btn-lg">Войти</button>
           </form>
         </div>
-      </div>
+      </div> -->
       
       <div class="col-xs-12 col-md-3">
       
@@ -151,10 +150,10 @@
           <div class="left-bar__profile row">
       
             <!--  Вошли в аккаунт  -->
-            <!-- <div class="profile">
+            <div class="profile">
               <img src="http://placehold.it/45" class="img-circle">
               <h4>Manu Khakulov</h4>
-            </div> -->
+            </div>
       
             <!-- Не вошли в аккаунт -->
             <!-- <div class="profile profile--login">
@@ -167,13 +166,13 @@
           <div class="left-bar__action row">
             <ul class="nav nav-pills nav-stacked">
               <!-- Вошли в аккаунт -->
-              <!-- <li><a href="#"><i class="settings-ic"></i>Настройки</a></li> -->
-              <!-- <li><a href="#"><i class="logout-ic"></i>Выйти</a></li> -->
+              <li><a href="#"><i class="settings-ic"></i>Настройки</a></li>
+              <li><a href="#"><i class="logout-ic"></i>Выйти</a></li>
       
               <!-- Не вошли в аккаунт -->
               <!-- <li><a href="#"><i class="settings-ic"></i></a></li> -->
-              <li><a href="#auth"><i class="login-ic"></i>Войти</a></li>
-              <li><a href="#registration"><i class="logout-ic"></i>Регистрация</a></li>
+              <!-- <li><a href="#auth"><i class="login-ic"></i>Войти</a></li> -->
+              <!-- <li><a href="#registration"><i class="logout-ic"></i>Регистрация</a></li> -->
       
               <hr>
               <li class="active">
@@ -206,21 +205,17 @@
                 <div class="tag tag--pink">Остальное</div>
                 <div class="tag tag--orange">Остальное</div>
                 <div class="tag tag--green">Остальное</div>
-                <div class="tag tag--violet">Остальное</div>
+                <div class="tag tag--brown">Остальное</div>
                 <div class="tag tag--add" data-remodal-target="add-tag">Добавить тег</div>
               </li>
             </ul>
-          </div>
-      
-          <div class="left-bar__footer row">
-            <p>© 2017 <a href="https://github.com/CalendoApp">CalendoApp</a></p>
           </div>
       
         </div>
       
       </div>
       <div class="remodal task-modal" data-remodal-id="task-modal">
-        <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="col-xs-12">
           <div class="row">
             <div class="form-group">
               <h2><small>Изменение записи</small></h2>
